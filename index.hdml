@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+  <HTML>
+    <head>
+      <title>First webpage</title>
+   </head>
+   <body>
+     <h1>Look, i'm coding</h1>
+        <p>lol</p>
+     <h2>this is what I am writing</h2>
+        <p>brb</p>
+      <h3>ok this is fun</h3>
+        <p>ttyl</p>
+      <h4>I'm running out of things to say</h4>
+        <p>gtg</p>
+     <h5>I'm bored</h5>
+        <p>help</p>
+     <h6>Done</h6>
+       <p>bye</p>
+    </body>
+  </html>
+  
+  
+  
