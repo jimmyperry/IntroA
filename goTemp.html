@@ -163,8 +163,10 @@
 		
 		<script>
     var temp=prompt("what is the temp");
+    var prog=prompt("what should it be programed to do?")
     temp=parseInt(temp):
-    document.getElementById("currentTemp").innerHTL=temp;
+    document.getElementById("currentTemp").innerHTML=temp;
+    document.getElementById("progTemp").innerHTML=prog;
       
     if(temp<45||temp>95){
       alert("please enter a temperature 45-95");
