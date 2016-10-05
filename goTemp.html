@@ -162,11 +162,11 @@
 		</p>
 		
 		<script>
-    var temp=prompt("what is the tep");
-      temp=parseInt(temp):
-      document.getElementById("currentTemp").innerHTL=temp;
+    var temp=prompt("what is the temp");
+    temp=parseInt(temp):
+    document.getElementById("currentTemp").innerHTL=temp;
       
-    if(temp>95||temp<45){
+    if(temp<45||temp>95){
       alert("please enter a temperature 45-95");
     }
     function incTemp(){
