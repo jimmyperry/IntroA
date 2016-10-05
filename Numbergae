@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title></title>
+</head>
+<body>
+  <p id="uanswer"></p>
+  <p id="answer"></p>
+  <p id="response"></p>
+
+<script type="text/javascript">
+var q=propmt("number 1-5");
+
+var computerChoice(){
+  return Math.floor(Math.rando()*5+1);
+  
+}
+docuent.getEleentBYId("response").innerHTML="Computer Choice"+computerChoice();
+
+if(q===computerChoice()){
+  docuent.getEleentBYId("response").innerHTML="you guessed it right"
+}
+else{
+  document.getEleentBYId("response").innerHTML="you got it wrong"
+}
+if(q<1||q>5){
+  docuent.getEleentBYId("uanswer").innerHTML="your choice"+q
+}
+</script>
+
+</body>
+</html>
+
+
+  
+
+
