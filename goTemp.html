@@ -162,25 +162,30 @@
 		</p>
 		
         <script>
-        var startUp=function(){
-          var currentTep=30;
-          var progTemp=75;
-          var check=true;
-          
-          
-          while(check){
-            currentTemp=parseInt(prompt("what\'s the current temp"));
-            progTemp=parseInt(prompt("what\'s the programed temp"));
-            if((currentTemp>45)||(current temp<95)||(progTemp>45)||(progTemp<95)){
-              check=false;
-            }
-        }
+        var temp=prompt("what is the temp?");
+        var prog=prompt("what should it be programmed to?")
+        temp=parseInt(temp);
+        document.getElementById("currentTemp").innerHTML=temp;
+        document.getElementById("progtemp").innerHTML=prog;
+        
+        
+        
+        if(temp>95||temp<45){
+            alert("please enter a temperture 45-95")
         }
         
         
-        startup();
-  
-
+        function incTemp(){
+            temp=temp+1;
+            document.getElementById("currentTemp").innerHTML=temp;
+            
+        }
+        function decTemp(){
+            temp=temp-1;
+            document.getElementById("currentTemp").innerHTML=temp;
+            
+        }
+		  
 		  
 		  
 		  
