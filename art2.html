@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<canvas id="myCanvas"></canvas>
+<script type="text/javascript">
+	var canvas = document.getElementById("myCanvas");
+	var ctx = canvas.getContext("2d");
+
+var askx = parseInt(prompt("number x?"));
+var asky = parseInt(prompt("number y?"))
+
+
+	canvas.width = askx
+	canvas.height = asky
+
+  ctx.beginPath();
+	ctx.fillStyle = "yellow"
+	ctx.fillRect(0/400*askx,0/400*asky,100/400*askx,140/400*asky);
+
+
+  ctx.beginPath();
+  ctx.fillStyle = "black";
+  ctx.fillRect(0/400*askx,140/400*asky,100/400*askx,10/400*asky);
+
+  
+  ctx.beginPath();
+  ctx.fillStyle = "blue";
+  ctx.fillRect(0/400*askx,150/400*asky,100/400*askx,140/400*asky);
+  
+  ctx.beginPath();
+  ctx.fillStyle = "black";
+  ctx.fillRect(0/400*askx,290/400*asky,400/400*askx,10/400*asky);
+  
+  ctx.beginPath();
+  ctx.fillStyle = "red"
+  ctx.fillRect(0/400*askx,300/400*asky,100/400*askx,100/400*asky);
+  
+  ctx.beginPath();
+  ctx.fillStyle = "black";
+  ctx.fillRect(100/400*askx,0/400*asky,10/400*askx,290/400*asky);
+  
+  ctx.beginPath();
+  ctx.fillStyle = "black";
+  ctx.fillRect(100/400*askx,300/400*asky,10/400*askx,100/400*asky);
+  
+  ctx.beginPath();
+  ctx.fillStyle = "white";
+  ctx.fillRect(110/400*askx,0/400*asky,290/400*askx,290/400*asky);
+  
+  ctx.beginPath();
+  ctx.fillStyle = "yellow";
+  ctx.fillRect(110/400*askx,300/400*asky,260/400*askx,100/400*asky);
+  
+  ctx.beginPath();
+  ctx.fillStyle = "black";
+  ctx.fillRect(370/400*askx,300/400*asky,10/400*askx,100/400*asky);
+  
+  ctx.beginPath();
+  ctx.fillStyle = "black";
+  ctx.fillRect(380/400*askx,345/400*asky,20/400*askx,10/400*asky);
+  
+  ctx.beginPath();
+  ctx.fillStyle = "red";
+  ctx.fillRect(380/400*askx,300/400*asky,20/400*askx,45/400*asky);
+  
+  ctx.beginPath();
+  ctx.fillStyle = "blue";
+  ctx.fillRect(380/400*askx,355/400*asky,20/400*askx,45/400*asky);
+  
+    
+  
+	
+</script>
+<style>
+  #myCanvas {
+    border: solid black 10px;
+  }
+</style>
+</body>
+</html>
