@@ -10,8 +10,14 @@
 
 <canvas id="myCanvas"></canvas>
 
-<script>
 
+
+<script>
+var sun = parseInt(prompt("how big do you want the sun? Pick a number 0-200"));
+	while(sun<0 || sun>200) {
+		sun = parseInt(prompt("Pick a number 0-200"));
+	}
+	
 
 
 var canvas=document.getElementById("myCanvas");
@@ -127,7 +133,7 @@ ctx.beginPath();
   ctx.fillRect(170,460,20,90);
   
 ctx.beginPath();
-	ctx.arc(510, 30, 100, 10, 10 * Math.PI);
+	ctx.arc(510, 20, sun, 10, 10 * Math.PI);
 	ctx.fillStyle="yellow"
 	ctx.fill();
 	ctx.stroke();
